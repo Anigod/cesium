@@ -480,6 +480,10 @@ var scratchColorBytes = new Array(4);
 Cesium3DTileBatchTable.prototype.setColor = function (batchId, color) {
   //>>includeStart('debug', pragmas.debug);
   checkBatchId(batchId, this.featuresLength);
+  if (!defined(color)) {
+    //If the color is not defined, the original color remains
+    return;
+  }
   Check.typeOf.object("color", color);
   //>>includeEnd('debug');
 

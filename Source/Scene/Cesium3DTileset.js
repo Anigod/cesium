@@ -1219,6 +1219,8 @@ Object.defineProperties(Cesium3DTileset.prototype, {
    * event is raised, so code in <code>tileVisible</code> can manually set a feature's
    * properties (e.g. color and show) after the style is applied. When
    * a new style is assigned any manually set properties are overwritten.
+   * Use true to specify the Color for all objects that are not overridden by the condition, 
+   * otherwise use the default Color Cesium.color.White.
    * </p>
    *
    * @memberof Cesium3DTileset.prototype
